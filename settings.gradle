@@ -1,0 +1,3 @@
+include ':ktxplus'
+include ':app'
+rootProject.name = "KTXPlus"
