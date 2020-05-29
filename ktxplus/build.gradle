@@ -41,11 +41,11 @@ if (propertiesFile.exists()) {
     githubProperties.load(new FileInputStream(propertiesFile))
 
     def getVersionName = { ->
-        return "1.0"
+        return "1.0.1"
     }
 
     def getArtificatId = { ->
-        return "KTXPlus"
+        return "ktxplus"
     }
 
     project.afterEvaluate {
@@ -94,7 +94,7 @@ if (propertiesFile.exists()) {
             repositories {
                 maven {
                     name = "GitHubPackages"
-                    url = uri("https://maven.pkg.github.com/hanihashemi/MatterMost-Messaging-Android-Library")
+                    url = uri("https://maven.pkg.github.com/hanihashemi/KTXPlus")
                     credentials {
                         username = githubProperties['gpr.usr'] ?: System.getenv("GPR_USER")
                         password = githubProperties['gpr.key'] ?: System.getenv("GPR_API_KEY")
